@@ -20,7 +20,7 @@
     <!-- <view class="goon goon1">继续购买</view> -->
     <div class="goon goon1" @click="open">继续购买</div>
     <!-- <view class="goon goon2">查看订单</view> -->
-    <div class="goon goon2 m-border-gradient-1px m-border-gradient-left" open-type="switchTab" @click="openPicker">查看订单</div>
+    <div class="goon goon2 border-t-1px border-b-1px" open-type="switchTab" @click="openPicker">查看订单</div>
     <!-- <mt-datetime-picker
     ref="picker"
     type="time"
@@ -68,6 +68,7 @@
 <style scoped lang="scss">
  @import '../assets/style/variable';
   @import '../assets/style/m-1-px';
+  @import '../assets/style/1-px.scss';
   .fulfill_img {
     display: block;
     // width: 170px;
@@ -141,9 +142,9 @@
   }
   .goon2 {
     color: #555;
-    // border: 1px;
-    // border: 1px solid #bbb;
-    // @include border-b-1px(#bbb);
+    // @include border-t-1px(#333);
+    // @include border-b-1px(#333)
+    // @include border( 1px,  #333)
 
   }
 
